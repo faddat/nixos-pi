@@ -12,7 +12,7 @@ jobs:
   build-default-image:
     name: Build default image
     if: ${{ github.event.inputs.environmentName == 'default' }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4.1.1
     - uses: cachix/install-nix-action@v26
